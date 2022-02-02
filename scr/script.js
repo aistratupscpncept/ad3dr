@@ -39,14 +39,14 @@ function init(){
     renderer = new THREE.WebGLRenderer({antialias: true, alpha:true});
     renderer.setSize(500,500);
     renderer.setPixelRatio(window.devicePixelRatio);
-    containerDrone.append(renderer.domElement);
+    containerDrone.appendChild(renderer.domElement);
 
 
 
 
     //load model objects
     let loader = new GLTFLoader();
-    loader.load('/model/drone.gltf', function (gltf){
+    loader.load('model/drone.gltf', function (gltf){
         scene.add(gltf.scene);
         drone = gltf.scene; 
         animateDrone();
