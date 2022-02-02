@@ -222,6 +222,14 @@ canvas{
 
 @media (max-width:600px)  { 
     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .intro-text h2{
+        font-size: 40px;
+        font-weight: 700;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgb(3, 25, 37) 50%, rgba(255,255,255) 50%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     .card-box {
         position:relative;
         width: 35vh;
