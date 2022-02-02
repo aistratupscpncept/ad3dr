@@ -46,7 +46,7 @@ function init(){
 
     //load model objects
     let loader = new GLTFLoader();
-    loader.load('../model/drone.gltf', function (gltf){
+    loader.load('https://github.com/aistratupscpncept/ad3dr/blob/main/model/drone.gltf', function (gltf){
         scene.add(gltf.scene);
         drone = gltf.scene; 
         animateDrone();
