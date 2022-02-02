@@ -39,7 +39,7 @@ function init(){
     renderer = new THREE.WebGLRenderer({antialias: true, alpha:true});
     renderer.setSize(500,500);
     renderer.setPixelRatio(window.devicePixelRatio);
-    document.body.appendChild(renderer.domElement);
+    containerDrone.append(renderer.domElement);
 
 
 
