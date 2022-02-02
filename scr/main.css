@@ -146,6 +146,7 @@ main {
     font-size: 15px;
     font-weight: 800;
     border-bottom: 5px solid white;
+    padding:0px;
 }
 .infos table{
     border-collapse: collapse;
