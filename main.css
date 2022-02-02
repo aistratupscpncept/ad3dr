@@ -1,0 +1,264 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+
+}
+body {
+    font-family: 'Share Tech Mono', monospace;
+    color: black;
+    width: 100%;
+    height: 100%,
+
+}
+
+
+header {
+    display: flex;
+    width: 90%;
+    height:10vh;
+    margin:auto;
+    align-items: center;
+}
+.logo-container{
+    position: relative;
+    left:50%;
+    transform:translate(-50%);
+}   
+.logo {
+    margin: 15px;
+    font-size: 20px;
+}
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+ 
+.nav-link {
+    background-color: #ffff;
+    border: 1px solid black;
+    color: black;
+    border-radius:5px;
+    font-size: 15;
+    width: 30vh;
+    margin: 20px;
+    padding:20px;
+    text-decoration: none;
+}
+.nav-link:hover{
+    background-color: rgb(3, 25, 37);
+    color: white;
+    
+}
+.logo-container,.nav-links {
+    display: flex;
+}
+main {
+    background: #518cff;
+    color: #fff;
+}
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+
+}
+.intro-text h2{
+    font-size: 40px;
+    font-weight: 700;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(3, 25, 37) 50%, rgba(255,255,255) 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+.intro-text li {
+    list-style-type: none;
+    margin: 15px;
+    padding: 5px;
+}
+
+.sectionDrone{
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+.card-box {
+    position:relative;
+    width: 25%;
+    height: 70%;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    padding: 40px;
+    left: 75%;
+    margin-top: 10vh;
+    border-radius: 5px;
+}
+.card-box h1 {
+    font-size: 30px;
+}
+
+.card-box hr {
+    border: 5px solid white;
+    margin-top: 5px;
+}
+
+.card-box p {
+    margin-top: 35px;
+    font-size: 15px;
+}
+
+
+#testDrone canvas {
+    position:absolute;
+    bottom: -50%;
+    left: 5%;
+}
+
+
+
+
+.info-section {
+    height: 100vh; 
+    background-color: #006eff;
+    color: #fff;
+}
+.info-container {
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px;
+    justify-content: center;
+
+
+}
+
+.infos p{
+    font-size: 20px;
+    font-weight: 800;
+    border-bottom: 5px solid white;
+}
+.infos table{
+    border-collapse: collapse;
+
+}
+.infos th {
+    background-color: rgb(0, 140, 255);
+}
+.infos td {
+    background-color: rgb(31, 132, 214);
+
+}
+.infos td,th{
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.infos {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer {
+    background-color:#fff;
+    width: 50px;
+    height: 10vh;
+}
+
+.modal  {
+    color: black;
+}
+.modal-body canvas{
+    position:absolute;
+    top: -50vh;
+    left: -10vh;
+    height: 50vh;
+    width: 100vh;
+
+}
+.card-box button {
+    display:none;
+}
+ 
+canvas{
+    position: absolute;
+    right: 50vh;
+    top: 80vh;
+    display: block;
+}
+.socials-network p{
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    color:#fff;
+
+}
+.socials-network img{
+    margin: 25px;
+    padding:5px;
+    height: 80px;
+    border-radius: 15px;
+}
+
+.socials-network {
+    background: rgb(0, 140, 255);
+    margin: 15px;
+    width: 60vh;
+    display:flex;
+    justify-content: center;
+}
+
+@media (max-width:600px)  { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .card-box {
+        position:relative;
+        width: 35vh;
+        height: 80vh;
+        background-color: rgb(0, 110, 255);
+        color: white;
+        padding: 40px;
+        margin-top: 10vh;
+        left: 25%;
+        border-radius: 5px;
+    }
+    .card-box p  {
+        font-size: 13px;
+    }
+    .intro-text h2{
+        font-size: 40px;
+        font-weight: 700;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgb(3, 25, 37) 50%, rgba(255,255,255) 50%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }   
+    .card-box p {
+        font-size: 12px;
+    }
+    .card-box button {
+        display: block;
+    }
+
+    .info-container {
+        width: 80vh;
+    }
+    .socials-network {
+        position:relative;
+        background:none;
+        right: 25%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
