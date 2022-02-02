@@ -222,11 +222,7 @@ canvas{
 
 @media (max-width:600px)  { 
     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
-    .intro-text {
-        font-size: 40px;
-        font-weight: 700;
-        color: white
-    }
+
     .card-box {
         position:relative;
         width: 35vh;
@@ -238,6 +234,11 @@ canvas{
         left: 25%;
         border-radius: 5px;
     }
+
+    .intro-text h2{
+        background: none;
+    }
+
     .card-box p  {
         font-size: 10px;
     }
